@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sidebar</title>
+    <style>
+    /* Sidebar styles */
+    .custom-sidebar {
+        position: fixed; /* Fix the sidebar to the right */
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background: #044367; /* Sidebar background color */
+        height: 100vh; /* Full height */
+        width: 300px; /* Width of the sidebar */
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 1rem; /* Add padding */
+    }
+
+    .custom-dropdown {
+        margin: 1rem 0;
+    }
+
+    .custom-dropdown select {
+        width: 100%; /* Full width for dropdown */
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Main content styles */
+    .main-content {
+        margin-left: 320px; /* Offset for sidebar width + some margin */
+        padding: 2rem;
+    }
+    </style>
+</head>
+<body>
+    <div class="custom-sidebar">
+        <h2></h2>
+        <h2>Custom Sidebar</h2>
+        <div class="custom-dropdown">
+            <label for="contact-method">How would you like to be contacted?</label>
+            <select id="contact-method">
+                <option>Email</option>
+                <option>Home phone</option>
+                <option>Mobile phone</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <h1>Streamlit App with Custom Sidebar and Dropdown</h1>
+        <p>This is the main content area. The custom sidebar is positioned on the right side with a dropdown menu.</p>
+    </div>
+    <button onclick="write_function()">click</button>
+</body>
+</html>
