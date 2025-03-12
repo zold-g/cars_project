@@ -2,6 +2,7 @@ altair==5.4.1
 asyncio==3.4.3
 asyncodbc==0.1.1
 attrs==24.2.0
+arabic_reshaper==3.0.0
 blinker==1.8.2
 bs4==0.0.2
 cachetools==5.5.0
